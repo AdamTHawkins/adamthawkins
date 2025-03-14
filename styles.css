@@ -163,19 +163,18 @@ h1 {
     width: 90%;
     text-align: left;
     font-size: 1.1rem;
-    height: auto;
-    display: flex;  /* Use flexbox to align content */
-    justify-content: flex-start;  /* Align items at the start of the container */
-    align-items: center;  /* Center items vertically */
+    height: 50px;  /* Set a fixed height for the container */
+    display: flex;
+    align-items: center;  /* Vertically center the logo */
+    justify-content: center;  /* Horizontally center the logo */
 }
 
 .contact-logo {
-    width: 100%; /* Make the logo fill the container's width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 50px; /* Set a maximum width to ensure the logo doesn't become too large */
-    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    width: auto;  /* Let the image scale automatically */
+    height: 100%;  /* Let the image fit the container's height */
+    max-height: 40px;  /* Optional: limits the maximum height */
+    object-fit: contain;  /* Maintain aspect ratio */
 }
-
 .contact-btn, .download-cv-btn {
     background-color: #fca311;
     color: #ffffff;
