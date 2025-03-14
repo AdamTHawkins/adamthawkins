@@ -128,7 +128,7 @@ body {
 .main-content {
     margin-left: 280px;
     padding: 20px;
-    background-color: #ffffff; /* White background for the main content */
+    background-color: #e5e5e5; /* Light gray background for the main content */
 }
 
 /* Header - Profile Picture & Name */
@@ -201,9 +201,10 @@ h1 {
 .content {
     display: none;
     padding: 10px;
-    background-color: #e5e5e5;
+    background-color: #ffffff; /* White background for content */
     font-size: 1rem;
     border-radius: 10px;
+    margin-bottom: 20px; /* Added margin to separate sections */
 }
 .show {
     display: block;
