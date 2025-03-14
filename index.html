@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Professional Profile</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <button id="toggleButton">Show Qualifications</button>
-    <ul id="qualifications">
-        <li>Degree / Certification 1</li>
-        <li>Degree / Certification 2</li>
-        <li>Degree / Certification 3</li>
-    </ul>
+    <div class="container">
+        <!-- Top Section (Profile & Name) -->
+        <div class="top-section">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1 class="name">Your Name</h1>
+        </div>
+
+        <!-- Sidebar with Collapsible Categories -->
+        <div class="sidebar">
+            <div class="category">
+                <button class="category-header">Qualifications</button>
+                <ul class="category-content">
+                    <li>Degree in Computer Science</li>
+                    <li>Certified Web Developer</li>
+                    <li>Project Management Certification</li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <button class="category-header">Hobbies</button>
+                <ul class="category-content">
+                    <li>Coding</li>
+                    <li>Photography</li>
+                    <li>Playing Guitar</li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <button class="category-header">Skills</button>
+                <ul class="category-content">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React & Node.js</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
