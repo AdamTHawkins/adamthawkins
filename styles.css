@@ -48,7 +48,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 230px; /* Decrease sidebar width */
+    width: 250px;
     background: #14213d; /* Dark Blue */
     color: white;
     padding: 20px;
@@ -57,15 +57,15 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    align-items: center;
     justify-content: flex-start;
     border-right: 3px solid #006699;
 }
 
 /* Profile Picture Container */
 .profile-pic-container {
-    width: 80px; /* Set a fixed width */
-    height: 80px; /* Set a fixed height */
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
     border-radius: 50%;
     margin-bottom: 20px;
     overflow: hidden; /* Ensures the image fits into the circle */
@@ -79,7 +79,7 @@ body {
 
 /* Main Content */
 .main-content {
-    margin-left: 250px;
+    margin-left: 280px;
     padding: 20px;
     background-color: #e5e5e5; /* Light gray background for the main content */
 }
@@ -198,19 +198,21 @@ h1 {
 
 /* Fix for Profile Image Path */
 .profile-img {
-    background-image: url('Profile.JPG'); /* Ensure this path is correct */
-    background-size: cover; /* Adjust image to cover the container */
-    background-position: center;
-    width: 100%;
+    width: 100%; /* Make sure the image fits within the container */
     height: 100%;
+    object-fit: cover; /* Ensures the image doesn't stretch */
 }
 
 /* Fix for Sidebar Button Size and Alignment */
 .sidebar button {
     width: 100%;
     margin-bottom: 10px;
-    padding: 15px; /* Consistent padding */
-    text-align: left; /* Align buttons to the left */
+}
+
+/* Fix for overlapping buttons */
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 /* Fix for dropdown section padding consistency */
