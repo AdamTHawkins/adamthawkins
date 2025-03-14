@@ -135,12 +135,12 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 30px;
 }
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Align Name in the center */
     align-items: center;
     width: 100%;
     max-width: 1200px;
@@ -150,7 +150,7 @@ h1 {
     font-size: 3rem;
     font-weight: bold;
     margin: 0;
-    margin-left: 100px; /* Move Name to the right more */
+    margin-left: 10px;
 }
 .settings-icon {
     display: flex;
@@ -187,8 +187,8 @@ h1 {
 
 /* Collapsible Sections */
 .collapsible {
-    background: #006699;
-    color: white;
+    background: #fca311; /* Gold button */
+    color: #000000;
     padding: 15px;
     border: none;
     width: 100%;
@@ -196,12 +196,14 @@ h1 {
     cursor: pointer;
     font-size: 1.2rem;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 .content {
     display: none;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: #e5e5e5;
     font-size: 1rem;
+    border-radius: 10px;
 }
 .show {
     display: block;
