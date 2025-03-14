@@ -14,10 +14,20 @@
             <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
         </div>
         <h3>Contact Me</h3>
-        <p>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>💼 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">View Profile</a></p>
-        <p>👨‍💻 GitHub: <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></p>
-        <button class="resume-btn">📜 Download Resume</button>
+        <div class="contact-details">
+            <div class="contact-item">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                    <img src="linkedin-logo.png" alt="LinkedIn Logo" class="contact-logo"> LinkedIn
+                </a>
+            </div>
+            <div class="contact-item">
+                <p>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            </div>
+            <div class="contact-item">
+                <p>📞 Phone: +123 456 789</p>
+            </div>
+        </div>
+        <button class="cv-btn">CV</button>
     </aside>
 
     <!-- Main Content -->
@@ -26,8 +36,8 @@
         <!-- Header (Name, Dark Mode Toggle) -->
         <header>
             <div class="header-content">
-                <h1>Adam Hawkins</h1>
-                <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
+                <h1>Your Name</h1>
+                <button id="dark-mode-toggle" class="dark-mode-btn">Dark Mode</button>
             </div>
             <hr class="underline">
         </header>
@@ -76,7 +86,7 @@
 
     </div>
 
-    <button class="contact-float">Contact</button>
+    <button class="contact-float">📞 Contact</button>
 
     <script src="script.js"></script>
 </body>
