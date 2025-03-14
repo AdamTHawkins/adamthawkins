@@ -154,6 +154,24 @@ h1 {
     height: auto;
 }
 
+.contact-linkedin {
+    background-color: #ffffff;
+    padding: 15px;
+    color: #000000;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: left;
+    font-size: 1.1rem;
+    height: auto;
+}
+
+.contact-logo {
+    width: 20%; /* Make sure the image fits within the container */
+    height: 20%;
+    object-fit: cover; /* Ensures the image doesn't stretch */
+}
+
 .contact-btn, .download-cv-btn {
     background-color: #fca311;
     color: #ffffff;
