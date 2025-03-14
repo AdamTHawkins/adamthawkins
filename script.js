@@ -30,7 +30,7 @@ type();
 
 // Contact Modal (Popup)
 function openContactModal() {
-    document.getElementById("contact-modal").style.display = "block";
+    document.getElementById("contact-modal").style.display = "flex";
 }
 
 function closeContactModal() {
