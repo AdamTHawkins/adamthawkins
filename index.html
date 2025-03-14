@@ -8,22 +8,7 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <h2>Your Name</h2>
-        </div>
-        <div class="nav-right">
-            <a href="#about">About</a>
-            <a href="#work">Experience</a>
-            <a href="#qualifications">Qualifications</a>
-            <a href="#hobbies">Hobbies</a>
-            <a href="#skills">Skills</a>
-            <button id="dark-mode-toggle">🌙</button>
-        </div>
-    </nav>
-
-    <!-- Sidebar (Contact Section) -->
+    <!-- Sidebar (Profile Picture & Contact Section) -->
     <aside class="sidebar">
         <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
         <h3>Contact Me</h3>
@@ -35,11 +20,18 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <section id="about">
-            <h2>About Me</h2>
-            <p id="typing-text"></p> <!-- Typing Effect -->
-        </section>
 
+        <!-- Header (Name and Dark Mode Toggle) -->
+        <header>
+            <div class="profile-header">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic-top-left">
+                <h1>Your Name</h1>
+                <button id="dark-mode-toggle">🌙 Dark Mode</button>
+            </div>
+            <p id="typing-text"></p> <!-- Typing Effect -->
+        </header>
+
+        <!-- Collapsible Sections -->
         <section id="work" class="collapsible-section">
             <button class="collapsible">Work Experience</button>
             <div class="content">
@@ -75,6 +67,7 @@
         </section>
 
         <p class="last-updated">📅 Last Updated: <span id="update-date"></span></p>
+
     </div>
 
     <button class="contact-float">📞 Contact</button>
