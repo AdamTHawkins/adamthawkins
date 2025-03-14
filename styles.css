@@ -48,7 +48,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 250px;
+    width: 230px; /* Decrease sidebar width */
     background: #14213d; /* Dark Blue */
     color: white;
     padding: 20px;
@@ -57,7 +57,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align items to the left */
     justify-content: flex-start;
     border-right: 3px solid #006699;
 }
@@ -79,7 +79,7 @@ body {
 
 /* Main Content */
 .main-content {
-    margin-left: 280px;
+    margin-left: 250px;
     padding: 20px;
     background-color: #e5e5e5; /* Light gray background for the main content */
 }
@@ -209,12 +209,8 @@ h1 {
 .sidebar button {
     width: 100%;
     margin-bottom: 10px;
-}
-
-/* Fix for overlapping buttons */
-.sidebar button {
-    width: 100%;
-    margin-bottom: 10px;
+    padding: 15px; /* Consistent padding */
+    text-align: left; /* Align buttons to the left */
 }
 
 /* Fix for dropdown section padding consistency */
