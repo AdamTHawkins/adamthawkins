@@ -28,9 +28,13 @@ function type() {
 }
 type();
 
-// Contact Modal (Popup)
 function openContactModal() {
-    document.getElementById("contact-modal").style.display = "block";
+    let modal = document.getElementById("contact-modal");
+    modal.style.display = "flex"; // Use flex to properly center it
+}
+
+function closeContactModal() {
+    document.getElementById("contact-modal").style.display = "none";
 }
 
 // Ensure modal is not opening on load
