@@ -15,7 +15,7 @@ document.querySelectorAll(".collapsible").forEach(button => {
     });
 });
 
-// Typing Effect
+// Typing Effect (faster speed)
 const typingText = document.getElementById("typing-text");
 const text = "Welcome to my professional portfolio. I'm a passionate web developer!";
 let i = 0;
@@ -23,7 +23,7 @@ function type() {
     if (i < text.length) {
         typingText.innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 50);
+        setTimeout(type, 30); // Faster typing speed
     }
 }
 type();
@@ -33,5 +33,5 @@ document.getElementById("update-date").innerText = new Date().toLocaleDateString
 
 // Floating Contact Button Scroll
 document.querySelector(".contact-float").addEventListener("click", () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    alert("📧 Email: your.email@example.com\n📞 Phone: +123 456 789");
 });
