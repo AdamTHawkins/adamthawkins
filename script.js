@@ -28,17 +28,17 @@ function type() {
 }
 type();
 
+// Function to open the contact modal
 function openContactModal() {
-    let modal = document.getElementById("contact-modal");
-    modal.style.display = "flex"; // Use flex to properly center it
+    document.getElementById("contact-modal").style.display = "flex";
 }
 
+// Function to close the contact modal
 function closeContactModal() {
     document.getElementById("contact-modal").style.display = "none";
 }
 
-// Ensure modal is not opening on load
+// Ensure modal is hidden on page load
 window.onload = function () {
     document.getElementById("contact-modal").style.display = "none"; 
 };
-
