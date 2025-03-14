@@ -8,6 +8,67 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* Sidebar */
+.sidebar {
+    width: 220px; /* Adjusted for a narrower sidebar */
+    background: #14213d; /* Dark Blue */
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: 3px solid #006699;
+}
+
+/* Profile Picture Container */
+.profile-pic-container {
+    width: 80px; /* Set a fixed width */
+    height: 80px; /* Set a fixed height */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures the image fits into the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #ffffff; /* White circular border around the profile picture */
+}
+
+/* Profile Image */
+.profile-img {
+    width: 100%; /* Make sure the image fits within the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image doesn't stretch */
+}
+
+/* Sidebar Button Consistency */
+.sidebar button {
+    width: 100%;
+    margin-bottom: 15px; /* Consistent spacing between buttons */
+    padding: 12px; /* Uniform padding */
+    font-size: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fca311; /* Goldish button color */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #d89c0d;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px; /* Adjusted to match the narrower sidebar */
+    padding: 20px;
+    background-color: #e5e5e5; /* Light gray background for the main content */
+}
+
 /* Dark Mode */
 .dark-mode {
     background-color: #000000; /* Dark background */
@@ -46,117 +107,20 @@ body {
     background-color: #fca311;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 220px; /* Adjust width for sidebar */
-    background: #14213d; /* Dark Blue */
-    color: white;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    border-right: 3px solid #006699;
+/* Fix Sidebar Button Alignment and Spacing */
+.sidebar button {
+    margin-bottom: 15px; /* Consistent spacing between buttons */
+    width: 100%; /* Keep the width consistent for each button */
 }
 
-/* Profile Picture Container */
+/* Fix Profile Picture and Contact Alignment */
 .profile-pic-container {
-    width: 80px; /* Set a fixed width */
-    height: 80px; /* Set a fixed height */
-    border-radius: 50%;
-    margin-bottom: 20px;
-    overflow: hidden; /* Ensures the image fits into the circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 4px solid #ffffff; /* White circular border around the profile picture */
+    width: 80px; /* Smaller size */
+    height: 80px; /* Smaller size */
+    margin-bottom: 20px; /* Space between profile picture and buttons */
 }
 
-/* Profile Image */
-.profile-img {
-    width: 100%; /* Make sure the image fits within the container */
-    height: 100%;
-    object-fit: cover; /* Ensures the image doesn't stretch */
-}
-
-/* Main Content */
-.main-content {
-    margin-left: 240px; /* Adjust content to match sidebar width */
-    padding: 20px;
-    background-color: #e5e5e5; /* Light gray background for the main content */
-}
-
-/* Header - Profile Picture & Name */
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    justify-content: center;
-}
-
-header .header-content {
-    display: flex;
-    justify-content: center; /* Center the name horizontally */
-    width: 100%;
-    padding: 0 20px;
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
-    text-align: center;
-}
-
-.underline {
-    width: 40%; /* Adjust width to shift it left */
-    height: 3px;
-    background-color: #0073b1; /* Blue color */
-    margin-top: 10px;
-    align-self: center;
-}
-
-/* Collapsible Sections */
-.collapsible {
-    background: #fca311; /* Gold button */
-    color: #000000;
-    padding: 15px;
-    border: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-.content {
-    display: none;
-    padding: 15px;
-    background-color: #ffffff; /* White background for content */
-    font-size: 1rem;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding-top: 15px;
-}
-.show {
-    display: block;
-}
-
-/* Contact Section Styling */
-.contact-item {
-    background-color: #ffffff;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    width: 100%;
-    text-align: left;
-    font-size: 1.1rem;
-}
-
+/* Sidebar Buttons */
 .contact-btn, .download-cv-btn {
     background-color: #fca311;
     color: #ffffff;
@@ -169,75 +133,16 @@ h1 {
     border-radius: 10px;
     margin-top: 15px;
 }
-
 .contact-btn:hover, .download-cv-btn:hover {
     background-color: #d89c0d;
 }
 
-/* Dark Mode Toggle */
-#dark-mode-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #fca311;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-#dark-mode-toggle:hover {
-    background-color: #d89c0d;
-}
-
-/* Fix for Profile Image Path */
-.profile-img {
-    background-image: url('Profile.JPG'); /* Ensure this path is correct */
-    background-size: cover; /* Adjust image to cover the container */
-    background-position: center;
-    width: 100%;
-    height: 100%;
-}
-
-/* Fix for Sidebar Button Size and Alignment */
-.sidebar button {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/* Fix for overlapping buttons */
-.sidebar button {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/* Fix for dropdown section padding consistency */
-.content {
-    padding: 15px;
-    padding-top: 15px; /* Consistent padding */
-}
-
-/* Fix for Profile Image Size */
-.profile-pic-container {
-    width: 80px; /* Smaller size */
-    height: 80px; /* Smaller size */
-}
-
-/* Fix Sidebar Button Alignment and Spacing */
-.sidebar button {
-    margin-bottom: 15px; /* Consistent spacing between buttons */
-}
-
-/* Adjust Contact Section Consistency */
-.contact-btn, .download-cv-btn {
-    margin-top: 15px;
-}
-
 /* Sidebar Button Consistency */
 .sidebar button {
-    padding: 15px;
-    width: 100%;
+    padding: 12px; /* Consistent padding */
     font-size: 1rem;
+    background-color: #fca311; /* Goldish button color */
+    color: #ffffff;
     border-radius: 10px;
     text-align: center;
 }
