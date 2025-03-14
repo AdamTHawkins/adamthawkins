@@ -13,14 +13,46 @@ body {
     background-color: #000000; /* Dark background */
     color: #ffffff; /* White text */
 }
+
 .dark-mode .sidebar {
-    background: #14213d; /* Dark Blue */
+    background: #14213d; /* Dark Blue sidebar */
 }
+
+.dark-mode .main-content {
+    background-color: #333333; /* Dark gray background for content */
+}
+
 .dark-mode .collapsible {
     background: #fca311; /* Gold-ish button background */
+    color: #ffffff;
 }
+
+.dark-mode .content {
+    background-color: #1f1f1f; /* Dark content background */
+    color: #ffffff;
+}
+
+.dark-mode h1, .dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode .contact-item, .dark-mode .download-cv-btn {
+    background-color: #333333;
+    color: white;
+}
+
 .dark-mode #dark-mode-toggle {
     color: #ffffff;
+    background-color: #fca311;
+}
+
+.dark-mode .collapsible {
+    background-color: #fca311;
+    color: #000000;
+}
+
+.dark-mode .underline {
+    background-color: #fca311;
 }
 
 /* Sidebar */
@@ -30,98 +62,13 @@ body {
     color: white;
     padding: 20px;
     position: fixed;
-    top: 0; /* Align with the top of the page */
+    top: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     border-right: 3px solid #006699;
-}
-.profile-pic-container {
-    margin-top: 20px;
-}
-.profile-pic {
-    width: 100px;
-    border-radius: 50%;
-    border: 3px solid white;
-}
-.contact-item {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 10px;
-    width: 100%;
-}
-.contact-logo {
-    width: 20px;
-    margin-right: 10px;
-}
-.contact-btn {
-    background: #fca311; /* Gold button */
-    color: white;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-.contact-btn:hover {
-    background: #d89c0d;
-}
-.download-cv-btn {
-    background: #fca311;
-    color: white;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-.download-cv-btn:hover {
-    background: #d89c0d;
-}
-
-/* Modal Styles (Popup) */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); /* Black with transparency */
-}
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-}
-.close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 /* Main Content */
@@ -152,7 +99,6 @@ h1 {
     font-weight: bold;
     margin: 0;
     text-align: center;
-    display: inline-block; /* Ensure name stays inline */
 }
 
 .underline {
@@ -189,12 +135,12 @@ h1 {
 }
 .content {
     display: none;
-    padding: 15px; /* Equal padding on all sides */
+    padding: 15px;
     background-color: #ffffff; /* White background for content */
     font-size: 1rem;
     border-radius: 10px;
-    margin-bottom: 20px; /* Added margin to separate sections */
-    padding-top: 15px; /* Ensure consistent padding at top and bottom */
+    margin-bottom: 20px;
+    padding-top: 15px;
 }
 .show {
     display: block;
@@ -215,13 +161,3 @@ h1 {
 #dark-mode-toggle:hover {
     background-color: #d89c0d;
 }
-
-/* Settings Icon */
-#settings-icon {
-    position: absolute;
-    top: 20px;
-    right: 60px;
-    cursor: pointer;
-}
-
-/* Add more styling for settings */
