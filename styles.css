@@ -210,7 +210,7 @@ h1 {
 }
 
 .modal {
-    display: none; /* Initially hidden */
+    display: none !important; /* Ensure it never shows initially */
     position: fixed;
     z-index: 1000;
     left: 0;
