@@ -10,7 +10,9 @@
 
     <!-- Sidebar (Profile Picture & Contact Section) -->
     <aside class="sidebar">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="profile-pic-container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
         <h3>Contact Me</h3>
         <p>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
         <p>💼 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">View Profile</a></p>
@@ -21,15 +23,19 @@
     <!-- Main Content -->
     <div class="main-content">
 
-        <!-- Header (Name and Dark Mode Toggle) -->
+        <!-- Header (Name, Dark Mode Toggle) -->
         <header>
-            <div class="profile-header">
-                <img src="profile.jpg" alt="Profile Picture" class="profile-pic-top-left">
+            <div class="header-content">
                 <h1>Your Name</h1>
-                <button id="dark-mode-toggle">🌙 Dark Mode</button>
+                <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
             </div>
-            <p id="typing-text"></p> <!-- Typing Effect -->
+            <hr class="underline">
         </header>
+
+        <!-- About Me (Typing Effect) -->
+        <section id="about-me">
+            <p id="typing-text"></p>
+        </section>
 
         <!-- Collapsible Sections -->
         <section id="work" class="collapsible-section">
