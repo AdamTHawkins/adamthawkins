@@ -28,10 +28,11 @@ function type() {
 }
 type();
 
-// Update Last Modified Date
-document.getElementById("update-date").innerText = new Date().toLocaleDateString();
+// Contact Modal (Popup)
+function openContactModal() {
+    document.getElementById("contact-modal").style.display = "block";
+}
 
-// Floating Contact Button Scroll
-document.querySelector(".contact-float").addEventListener("click", () => {
-    alert("📧 Email: your.email@example.com\n📞 Phone: +123 456 789");
-});
+function closeContactModal() {
+    document.getElementById("contact-modal").style.display = "none";
+}
