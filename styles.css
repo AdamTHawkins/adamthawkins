@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e5e5e5; /* Light gray background */
-    transition: background 0.3s ease, color 0.3s ease;
     color: #000000; /* Default text color */
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Dark Mode */
@@ -128,6 +128,7 @@ body {
 .main-content {
     margin-left: 280px;
     padding: 20px;
+    background-color: #ffffff; /* White background for the main content */
 }
 
 /* Header - Profile Picture & Name */
