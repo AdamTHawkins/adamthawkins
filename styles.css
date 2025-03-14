@@ -72,6 +72,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 4px solid #ffffff; /* White circular border around the profile picture */
 }
 
 /* Profile Image */
@@ -230,4 +231,13 @@ h1 {
 /* Adjust Contact Section Consistency */
 .contact-btn, .download-cv-btn {
     margin-top: 15px;
+}
+
+/* Sidebar Button Consistency */
+.sidebar button {
+    padding: 15px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-align: center;
 }
