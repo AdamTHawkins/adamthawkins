@@ -30,9 +30,11 @@ type();
 
 // Contact Modal (Popup)
 function openContactModal() {
-    document.getElementById("contact-modal").style.display = "flex";
+    document.getElementById("contact-modal").style.display = "block";
 }
 
-function closeContactModal() {
-    document.getElementById("contact-modal").style.display = "none";
-}
+// Ensure modal is not opening on load
+window.onload = function () {
+    document.getElementById("contact-modal").style.display = "none"; 
+};
+
