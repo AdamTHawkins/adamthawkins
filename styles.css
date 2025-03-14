@@ -12,34 +12,14 @@ body {
     background-color: #1e1e1e;
     color: white;
 }
-.dark-mode .navbar, .dark-mode .sidebar {
+.dark-mode .sidebar {
     background: #333;
+}
+.dark-mode .collapsible {
+    background: #444;
 }
 .dark-mode #dark-mode-toggle {
     color: white;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background: #0073b1;
-    padding: 15px;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-.nav-right a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-}
-#dark-mode-toggle {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
 }
 
 /* Sidebar */
@@ -49,7 +29,6 @@ body {
     color: white;
     padding: 20px;
     position: fixed;
-    left: 0;
     top: 60px;
     height: 100vh;
 }
@@ -75,17 +54,45 @@ body {
     padding: 20px;
 }
 
+/* Header - Profile Picture & Name */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+.profile-pic-top-left {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
 /* Collapsible Sections */
 .collapsible {
     background: #0073b1;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border: none;
+    width: 100%;
+    text-align: left;
     cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 .content {
     display: none;
     padding: 10px;
+    background-color: #f1f1f1;
+    font-size: 1rem;
 }
 .show {
     display: block;
@@ -112,4 +119,24 @@ body {
     50% {
         opacity: 0;
     }
+}
+
+/* Last Updated */
+.last-updated {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0073b1;
+    margin-left: 20px;
+}
+
+.dark-mode #dark-mode-toggle {
+    color: white;
 }
