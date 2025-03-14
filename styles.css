@@ -31,10 +31,18 @@ body {
     position: fixed;
     top: 60px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.profile-pic-container {
+    margin-top: 20px;
 }
 .profile-pic {
     width: 100px;
     border-radius: 50%;
+    border: 3px solid white;
 }
 .resume-btn {
     background: white;
@@ -42,7 +50,7 @@ body {
     padding: 10px;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .resume-btn:hover {
     background: #d1e8ff;
@@ -57,28 +65,59 @@ body {
 /* Header - Profile Picture & Name */
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
 }
-.profile-header {
+.header-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-.profile-pic-top-left {
-    width: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 h1 {
     font-size: 3rem;
     font-weight: bold;
     margin: 0;
 }
+.dark-mode-btn {
+    background: #0073b1;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dark-mode-btn:hover {
+    background: #005f8e;
+}
+
+/* Underline below Name */
+.underline {
+    width: 60%;
+    height: 3px;
+    background-color: #0073b1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Typing Effect */
+#typing-text::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
 
 /* Collapsible Sections */
 .collapsible {
-    background: #0073b1;
+    background: #006699;
     color: white;
     padding: 15px;
     border: none;
@@ -105,38 +144,30 @@ h1 {
     right: 20px;
     background: #0073b1;
     color: white;
-    padding: 10px;
+    padding: 15px 20px;
     border-radius: 50%;
+    font-size: 16px;
     cursor: pointer;
+    border: none;
 }
 
-/* Typing Effect */
-#typing-text::after {
-    content: '|';
-    animation: blink 0.7s infinite;
-}
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
+.contact-float:hover {
+    background: #005f8e;
 }
 
 /* Last Updated */
 .last-updated {
     font-style: italic;
-    margin-top: 20px;
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
 }
 
 /* Dark Mode Toggle */
 #dark-mode-toggle {
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     color: #0073b1;
-    margin-left: 20px;
-}
-
-.dark-mode #dark-mode-toggle {
-    color: white;
 }
