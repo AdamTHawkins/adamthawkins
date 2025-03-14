@@ -8,39 +8,53 @@
 </head>
 <body>
 
-    <!-- Sidebar (Left Side) -->
-    <div class="sidebar">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <h2>Your Name</h2>
+        </div>
+        <div class="nav-right">
+            <a href="#about">About</a>
+            <a href="#work">Experience</a>
+            <a href="#qualifications">Qualifications</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#skills">Skills</a>
+            <button id="dark-mode-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Sidebar (Contact Section) -->
+    <aside class="sidebar">
         <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#qualifications">Qualifications</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </nav>
-    </div>
+        <h3>Contact Me</h3>
+        <p>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>💼 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">View Profile</a></p>
+        <p>👨‍💻 GitHub: <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></p>
+        <button class="resume-btn">📜 Download Resume</button>
+    </aside>
 
     <!-- Main Content -->
     <div class="main-content">
-        <!-- Header Section -->
-        <header>
-            <h1>Your Name</h1>
-        </header>
-
-        <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
-            <p>Write a short summary about yourself here. Your professional background, interests, or what makes you unique.</p>
+            <p id="typing-text"></p> <!-- Typing Effect -->
         </section>
 
-        <!-- Collapsible Sections -->
+        <section id="work" class="collapsible-section">
+            <button class="collapsible">Work Experience</button>
+            <div class="content">
+                <p><strong>Software Developer</strong> - Tech Company (2022 - Present)</p>
+                <p>Developed web applications and led frontend projects.</p>
+                <p><strong>Intern</strong> - Startup XYZ (2020 - 2022)</p>
+                <p>Worked on backend systems and API integrations.</p>
+            </div>
+        </section>
+
         <section id="qualifications" class="collapsible-section">
             <button class="collapsible">Qualifications</button>
             <div class="content">
                 <p>- Degree in Computer Science</p>
-                <p>- Certified Web Developer</p>
-                <p>- Project Management Certification</p>
+                <p>- Web Development Certification</p>
             </div>
         </section>
 
@@ -49,21 +63,22 @@
             <div class="content">
                 <p>- Coding</p>
                 <p>- Photography</p>
-                <p>- Playing Guitar</p>
             </div>
         </section>
 
         <section id="skills" class="collapsible-section">
             <button class="collapsible">Skills</button>
             <div class="content">
-                <p>- HTML, CSS, JavaScript</p>
+                <p>- JavaScript, HTML, CSS</p>
                 <p>- React & Node.js</p>
-                <p>- UI/UX Design</p>
             </div>
         </section>
+
+        <p class="last-updated">📅 Last Updated: <span id="update-date"></span></p>
     </div>
 
-    <script src="script.js"></script>
+    <button class="contact-float">📞 Contact</button>
 
+    <script src="script.js"></script>
 </body>
 </html>
