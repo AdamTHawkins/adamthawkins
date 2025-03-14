@@ -1,16 +1,16 @@
-// Get all category headers
-const headers = document.querySelectorAll(".category-header");
+// Get all collapsible buttons
+const collapsibles = document.querySelectorAll(".collapsible");
 
-// Add event listener to each header
-headers.forEach(header => {
-    header.addEventListener("click", function () {
+collapsibles.forEach(button => {
+    button.addEventListener("click", function () {
         const content = this.nextElementSibling;
 
-        // Toggle visibility
+        // Toggle display
         if (content.style.display === "block") {
             content.style.display = "none";
         } else {
             content.style.display = "block";
+            content.classList.add("show"); // Adds animation class
         }
     });
 });
