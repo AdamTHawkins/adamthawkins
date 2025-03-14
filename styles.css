@@ -64,16 +64,16 @@ body {
 
 /* Profile Picture Container */
 .profile-pic-container {
-    width: 80px; /* Fixed size of profile picture container */
-    height: 80px; /* Fixed size of profile picture container */
+    width: 80px; /* Set a fixed width */
+    height: 80px; /* Set a fixed height */
     border-radius: 50%;
     margin-bottom: 20px;
-    overflow: hidden; /* Ensure image fits into circle */
+    overflow: hidden; /* Ensures the image fits into the circle */
 }
 
 .profile-img {
-    width: 100%; /* Full width of the container */
-    height: 100%; /* Full height of the container */
+    width: 100%; /* Make sure the image fits within the container */
+    height: 100%;
     object-fit: cover; /* Ensures the image doesn't stretch */
 }
 
@@ -191,4 +191,37 @@ h1 {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+#dark-mode-toggle:hover {
+    background-color: #d89c0d;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+    .main-content {
+        margin-left: 220px;
+        padding: 15px;
+    }
+}
+
+/* Fix for overlapping buttons */
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Fix for dropdown section padding consistency */
+.content {
+    padding: 15px;
+    padding-top: 15px; /* Consistent padding */
+}
+
+/* Fix for Profile Image Size */
+.profile-pic-container {
+    width: 80px; /* Smaller size */
+    height: 80px; /* Smaller size */
 }
