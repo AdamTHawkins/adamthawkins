@@ -1,189 +1,189 @@
- General Styles 
+/* General Styles */
 body {
-    font-family Arial, sans-serif;
-    margin 0;
-    padding 0;
-    background-color #e5e5e5;  Light gray background 
-    color #000000;  Default text color 
-    transition background 0.3s ease, color 0.3s ease;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5; /* Light gray background */
+    color: #000000; /* Default text color */
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
- Dark Mode 
+/* Dark Mode */
 .dark-mode {
-    background-color #000000;  Dark background 
-    color #ffffff;  White text 
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* White text */
 }
 .dark-mode .sidebar {
-    background #14213d;  Keep the sidebar blue 
+    background: #14213d; /* Keep the sidebar blue */
 }
 .dark-mode .main-content {
-    background-color #333333;  Dark gray background for content 
+    background-color: #333333; /* Dark gray background for content */
 }
 .dark-mode .collapsible {
-    background #fca311;  Gold-ish button background 
-    color #ffffff;
+    background: #fca311; /* Gold-ish button background */
+    color: #ffffff;
 }
 .dark-mode .content {
-    background-color #1f1f1f;  Dark content background 
-    color #ffffff;
+    background-color: #1f1f1f; /* Dark content background */
+    color: #ffffff;
 }
 .dark-mode h1, .dark-mode p {
-    color #ffffff;
+    color: #ffffff;
 }
 .dark-mode .contact-item, .dark-mode .download-cv-btn {
-    background-color #333333;
-    color white;
+    background-color: #333333;
+    color: white;
 }
 .dark-mode #dark-mode-toggle {
-    color #ffffff;
-    background-color #fca311;
+    color: #ffffff;
+    background-color: #fca311;
 }
 
- Sidebar 
+/* Sidebar */
 .sidebar {
-    width 200px;  Adjust width for sidebar 
-    background #14213d;  Dark Blue 
-    color white;
-    padding 20px;
-    position fixed;
-    top 0;
-    height 100vh;
-    display flex;
-    flex-direction column;
-    align-items center;
-    justify-content flex-start;
-    border-right 3px solid #006699;
+    width: 200px; /* Adjust width for sidebar */
+    background: #14213d; /* Dark Blue */
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: 3px solid #006699;
 }
 
- Profile Picture Container 
+/* Profile Picture Container */
 .profile-pic-container {
-    width 80px;  Set a fixed width 
-    height 80px;  Set a fixed height 
-    border-radius 50%;
-    margin-bottom 20px;
-    overflow hidden;  Ensures the image fits into the circle 
-    display flex;
-    justify-content center;
-    align-items center;
-    border 4px solid #ffffff;  White circular border around the profile picture 
+    width: 80px; /* Set a fixed width */
+    height: 80px; /* Set a fixed height */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures the image fits into the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #ffffff; /* White circular border around the profile picture */
 }
 
- Profile Image 
+/* Profile Image */
 .profile-img {
-    width 100%;  Make sure the image fits within the container 
-    height 100%;
-    object-fit cover;  Ensures the image doesn't stretch 
+    width: 100%; /* Make sure the image fits within the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image doesn't stretch */
 }
 
- Main Content 
+/* Main Content */
 .main-content {
-    margin-left 240px;  Adjust content to match sidebar width 
-    padding 20px;
-    background-color #e5e5e5;  Light gray background for the main content 
+    margin-left: 240px; /* Adjust content to match sidebar width */
+    padding: 20px;
+    background-color: #e5e5e5; /* Light gray background for the main content */
 }
 
- Header - Profile Picture & Name 
+/* Header - Profile Picture & Name */
 header {
-    display flex;
-    flex-direction column;
-    align-items center;
-    margin-bottom 30px;
-    justify-content center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
 }
 
 header .header-content {
-    display flex;
-    justify-content center;  Center the name horizontally 
-    width 100%;
-    padding 0 20px;
+    display: flex;
+    justify-content: center; /* Center the name horizontally */
+    width: 100%;
+    padding: 0 20px;
 }
 
 h1 {
-    font-size 3rem;
-    font-weight bold;
-    margin 0;
-    text-align center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
 }
 
 .underline {
-    width 40%;  Adjust width to shift it left 
-    height 3px;
-    background-color #0073b1;  Blue color 
-    margin-top 10px;
-    align-self center;
+    width: 40%; /* Adjust width to shift it left */
+    height: 3px;
+    background-color: #0073b1; /* Blue color */
+    margin-top: 10px;
+    align-self: center;
 }
 
- Collapsible Sections 
+/* Collapsible Sections */
 .collapsible {
-    background #fca311;  Gold button 
-    color #000000;
-    padding 15px;
-    border none;
-    width 100%;
-    text-align left;
-    cursor pointer;
-    font-size 1.2rem;
-    margin-bottom 10px;
-    border-radius 10px;
+    background: #fca311; /* Gold button */
+    color: #000000;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .content {
-    display none;
-    padding 15px;
-    background-color #ffffff;  White background for content 
-    font-size 1rem;
-    border-radius 10px;
-    margin-bottom 10px;
-    padding-top 15px;
+    display: none;
+    padding: 15px;
+    background-color: #ffffff; /* White background for content */
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
 }
 
 .show {
-    display block;
+    display: block;
 }
 
- Contact Section Styling 
+/* Contact Section Styling */
 .contact-item {
-    background-color #ffffff;
-    padding 15px;
-    color #000000;
-    margin-bottom 20px;
-    border-radius 10px;
-    width 90%;
-    text-align left;
-    font-size 1.1rem;
-    height auto;
+    background-color: #ffffff;
+    padding: 15px;
+    color: #000000;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: left;
+    font-size: 1.1rem;
+    height: auto;
 }
 
 .contact-btn, .download-cv-btn {
-    background-color #fca311;
-    color #ffffff;
-    cursor pointer;
-    padding 15px;
-    margin-bottom 20px;
-    border-radius 10px;
-    width 90%;
-    text-align left;
-    font-size 1.1rem;
-    height auto;
+    background-color: #fca311;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: left;
+    font-size: 1.1rem;
+    height: auto;
 }
 
-.contact-btnhover, .download-cv-btnhover {
-    background-color #d89c0d;
+.contact-btn:hover, .download-cv-btn:hover {
+    background-color: #d89c0d;
 }
 
- Dark Mode Toggle 
+/* Dark Mode Toggle */
 #dark-mode-toggle {
-    position absolute;
-    top 20px;
-    right 20px;
-    background-color #fca311;
-    color white;
-    padding 10px;
-    border none;
-    cursor pointer;
-    border-radius 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fca311;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-#dark-mode-togglehover {
-    background-color #d89c0d;
+#dark-mode-toggle:hover {
+    background-color: #d89c0d;
 }
