@@ -236,8 +236,7 @@ h1 {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 50%; /* Adjust width for responsiveness */
-    max-width: 500px; /* Prevent it from becoming too wide */
+    width: 600px; /* Adjust width for responsiveness */
     text-align: center;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
