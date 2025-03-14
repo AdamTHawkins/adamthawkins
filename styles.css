@@ -165,6 +165,7 @@ h1 {
     text-align: left;
     font-size: 1.1rem;
     height: auto;
+    box-sizing: border-box;
 }
 
 .contact-btn:hover, .download-cv-btn:hover {
