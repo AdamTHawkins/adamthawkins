@@ -1,126 +1,115 @@
-/* General Styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
     background-color: #f3faff;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Sidebar Styling */
+/* Dark Mode */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark-mode .navbar, .dark-mode .sidebar {
+    background: #333;
+}
+.dark-mode #dark-mode-toggle {
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #0073b1;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-right a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sidebar */
 .sidebar {
     width: 250px;
     background: #0073b1;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    height: 100vh;
+    padding: 20px;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 60px;
+    height: 100vh;
 }
-
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 100px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
-    margin-bottom: 20px;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+.resume-btn {
+    background: white;
+    color: #0073b1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
-
-nav ul li {
-    margin: 15px 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #d1e8ff;
+.resume-btn:hover {
+    background: #d1e8ff;
 }
 
 /* Main Content */
 .main-content {
-    margin-left: 270px;
+    margin-left: 280px;
     padding: 20px;
-    width: 70%;
-}
-
-/* Header */
-header {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    border-bottom: 2px solid #0073b1;
-    padding-bottom: 10px;
-    color: #0073b1;
-}
-
-/* About Section */
-#about {
-    margin-top: 20px;
-}
-
-#about h2 {
-    color: #0073b1;
-    font-size: 22px;
 }
 
 /* Collapsible Sections */
-.collapsible-section {
-    margin-top: 20px;
-}
-
 .collapsible {
-    background-color: #0073b1;
+    background: #0073b1;
     color: white;
-    padding: 12px;
-    width: 100%;
-    text-align: left;
-    font-size: 18px;
+    padding: 10px;
     border: none;
     cursor: pointer;
-    transition: background 0.3s ease;
-    border-radius: 5px;
 }
-
-.collapsible:hover {
-    background-color: #005a8c;
-}
-
 .content {
-    padding: 15px;
     display: none;
-    background: #e6f2ff;
-    border-radius: 5px;
-    overflow: hidden;
+    padding: 10px;
+}
+.show {
+    display: block;
 }
 
-/* Animation for expanding */
-.content p {
-    margin: 5px 0;
-    transition: transform 0.3s ease-in-out;
+/* Floating Contact Button */
+.contact-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0073b1;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.show p {
-    transform: translateX(10px);
+/* Typing Effect */
+#typing-text::after {
+    content: '|';
+    animation: blink 0.7s infinite;
 }
-
-/* Smooth Scroll for Navigation */
-html {
-    scroll-behavior: smooth;
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
