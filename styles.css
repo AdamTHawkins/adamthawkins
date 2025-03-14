@@ -117,4 +117,140 @@ h1 {
     height: 3px;
     background-color: #0073b1; /* Blue color */
     margin-top: 10px;
-    align-self:
+    align-self: center;
+}
+
+/* Collapsible Sections */
+.collapsible {
+    background: #fca311; /* Gold button */
+    color: #000000;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.content {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff; /* White background for content */
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.show {
+    display: block;
+}
+
+/* Contact Section Styling */
+.contact-item {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    /* Ensuring uniform width, height, padding for all contact-related elements */
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.contact-btn, .download-cv-btn {
+    background-color: #fca311;
+    color: #ffffff;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 15px;
+    /* Consistent button width, height, padding, and other properties */
+    padding: 15px;
+    width: 100%;
+    height: 50px; /* Adjust height to be uniform */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-btn:hover, .download-cv-btn:hover {
+    background-color: #d89c0d;
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fca311;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #d89c0d;
+}
+
+/* Fix for Profile Image Path */
+.profile-img {
+    background-image: url('Profile.JPG'); /* Ensure this path is correct */
+    background-size: cover; /* Adjust image to cover the container */
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sidebar Button Size and Alignment */
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Overlapping buttons fixed */
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Dropdown section padding consistency */
+.content {
+    padding: 15px;
+    padding-top: 15px; /* Consistent padding */
+}
+
+/* Fix for Profile Image Size */
+.profile-pic-container {
+    width: 80px; /* Smaller size */
+    height: 80px; /* Smaller size */
+}
+
+/* Fix Sidebar Button Alignment and Spacing */
+.sidebar button {
+    margin-bottom: 15px; /* Consistent spacing between buttons */
+}
+
+/* Adjust Contact Section Consistency */
+.contact-btn, .download-cv-btn {
+    margin-top: 15px;
+}
+
+/* Sidebar Button Consistency */
+.sidebar button {
+    padding: 15px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
