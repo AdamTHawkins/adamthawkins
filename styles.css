@@ -156,7 +156,7 @@ h1 {
 }
 
 .underline {
-    width: 50%; /* Adjust width to not stretch full width */
+    width: 40%; /* Adjust width to shift it left */
     height: 3px;
     background-color: #0073b1; /* Blue color */
     margin-top: 10px;
@@ -194,7 +194,34 @@ h1 {
     font-size: 1rem;
     border-radius: 10px;
     margin-bottom: 20px; /* Added margin to separate sections */
+    padding-top: 15px; /* Ensure consistent padding at top and bottom */
 }
 .show {
     display: block;
 }
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fca311;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#dark-mode-toggle:hover {
+    background-color: #d89c0d;
+}
+
+/* Settings Icon */
+#settings-icon {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    cursor: pointer;
+}
+
+/* Add more styling for settings */
