@@ -30,7 +30,7 @@ body {
 .dark-mode h1, .dark-mode p {
     color: #ffffff;
 }
-.dark-mode .contact-item, .dark-mode .contact-linkedin {
+.dark-mode .contact-item {
     background-color: #333333;
     color: white;
 }
