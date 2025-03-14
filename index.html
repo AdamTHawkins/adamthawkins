@@ -7,44 +7,63 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Top Section (Profile & Name) -->
-        <div class="top-section">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1 class="name">Your Name</h1>
-        </div>
 
-        <!-- Sidebar with Collapsible Categories -->
-        <div class="sidebar">
-            <div class="category">
-                <button class="category-header">Qualifications</button>
-                <ul class="category-content">
-                    <li>Degree in Computer Science</li>
-                    <li>Certified Web Developer</li>
-                    <li>Project Management Certification</li>
-                </ul>
-            </div>
+    <!-- Sidebar (Left Side) -->
+    <div class="sidebar">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </div>
 
-            <div class="category">
-                <button class="category-header">Hobbies</button>
-                <ul class="category-content">
-                    <li>Coding</li>
-                    <li>Photography</li>
-                    <li>Playing Guitar</li>
-                </ul>
-            </div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header Section -->
+        <header>
+            <h1>Your Name</h1>
+        </header>
 
-            <div class="category">
-                <button class="category-header">Skills</button>
-                <ul class="category-content">
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>React & Node.js</li>
-                    <li>UI/UX Design</li>
-                </ul>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Write a short summary about yourself here. Your professional background, interests, or what makes you unique.</p>
+        </section>
+
+        <!-- Collapsible Sections -->
+        <section id="qualifications" class="collapsible-section">
+            <button class="collapsible">Qualifications</button>
+            <div class="content">
+                <p>- Degree in Computer Science</p>
+                <p>- Certified Web Developer</p>
+                <p>- Project Management Certification</p>
             </div>
-        </div>
+        </section>
+
+        <section id="hobbies" class="collapsible-section">
+            <button class="collapsible">Hobbies</button>
+            <div class="content">
+                <p>- Coding</p>
+                <p>- Photography</p>
+                <p>- Playing Guitar</p>
+            </div>
+        </section>
+
+        <section id="skills" class="collapsible-section">
+            <button class="collapsible">Skills</button>
+            <div class="content">
+                <p>- HTML, CSS, JavaScript</p>
+                <p>- React & Node.js</p>
+                <p>- UI/UX Design</p>
+            </div>
+        </section>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
