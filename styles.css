@@ -13,34 +13,27 @@ body {
     background-color: #000000; /* Dark background */
     color: #ffffff; /* White text */
 }
-
 .dark-mode .sidebar {
     background: #14213d; /* Keep the sidebar blue */
 }
-
 .dark-mode .main-content {
     background-color: #333333; /* Dark gray background for content */
 }
-
 .dark-mode .collapsible {
     background: #fca311; /* Gold-ish button background */
     color: #ffffff;
 }
-
 .dark-mode .content {
     background-color: #1f1f1f; /* Dark content background */
     color: #ffffff;
 }
-
 .dark-mode h1, .dark-mode p {
     color: #ffffff;
 }
-
 .dark-mode .contact-item, .dark-mode .download-cv-btn {
     background-color: #333333;
     color: white;
 }
-
 .dark-mode #dark-mode-toggle {
     color: #ffffff;
     background-color: #fca311;
@@ -48,7 +41,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 220px; /* Adjust width for sidebar */
+    width: 200px; /* Adjust width for sidebar */
     background: #14213d; /* Dark Blue */
     color: white;
     padding: 20px;
@@ -192,56 +185,4 @@ h1 {
 
 #dark-mode-toggle:hover {
     background-color: #d89c0d;
-}
-
-/* Fix for Profile Image Path */
-.profile-img {
-    background-image: url('Profile.JPG'); /* Ensure this path is correct */
-    background-size: cover; /* Adjust image to cover the container */
-    background-position: center;
-    width: 100%;
-    height: 100%;
-}
-
-/* Sidebar Button Size and Alignment */
-.sidebar button {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/* Overlapping buttons fixed */
-.sidebar button {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/* Dropdown section padding consistency */
-.content {
-    padding: 15px;
-    padding-top: 15px; /* Consistent padding */
-}
-
-/* Fix for Profile Image Size */
-.profile-pic-container {
-    width: 80px; /* Smaller size */
-    height: 80px; /* Smaller size */
-}
-
-/* Fix Sidebar Button Alignment and Spacing */
-.sidebar button {
-    margin-bottom: 15px; /* Consistent spacing between buttons */
-}
-
-/* Adjust Contact Section Consistency */
-.contact-btn, .download-cv-btn {
-    margin-top: 15px;
-}
-
-/* Sidebar Button Consistency */
-.sidebar button {
-    padding: 15px;
-    width: 100%;
-    font-size: 1rem;
-    border-radius: 10px;
-    text-align: center;
 }
