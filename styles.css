@@ -62,12 +62,19 @@ body {
     border-right: 3px solid #006699;
 }
 
-/* Profile Picture */
-.profile-img {
-    width: 80px; /* Fixed size of profile picture */
-    height: 80px; /* Fixed size of profile picture */
+/* Profile Picture Container */
+.profile-pic-container {
+    width: 80px; /* Fixed size of profile picture container */
+    height: 80px; /* Fixed size of profile picture container */
     border-radius: 50%;
     margin-bottom: 20px;
+    overflow: hidden; /* Ensure image fits into circle */
+}
+
+.profile-img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensures the image doesn't stretch */
 }
 
 /* Main Content */
@@ -184,19 +191,4 @@ h1 {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-}
-#dark-mode-toggle:hover {
-    background-color: #d89c0d;
-}
-
-/* Responsive Layout */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 200px;
-        padding: 15px;
-    }
-    .main-content {
-        margin-left: 220px;
-        padding: 15px;
-    }
 }
