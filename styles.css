@@ -29,6 +29,7 @@ body {
     color: white;
     padding: 20px;
     position: fixed;
+    top: 60px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -43,16 +44,40 @@ body {
     border-radius: 50%;
     border: 3px solid white;
 }
-.resume-btn {
+.cv-btn {
     background: white;
     color: #0073b1;
-    padding: 10px;
+    padding: 15px;
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 1.2rem;
 }
-.resume-btn:hover {
+.cv-btn:hover {
     background: #d1e8ff;
+}
+
+/* Contact Details */
+.contact-details {
+    width: 100%;
+}
+.contact-item {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.contact-item a {
+    color: #0073b1;
+    text-decoration: none;
+}
+.contact-logo {
+    width: 20px;
+    margin-right: 10px;
 }
 
 /* Main Content */
@@ -73,13 +98,14 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 2500px;
+    max-width: 1200px;
     padding: 0 20px;
 }
 h1 {
     font-size: 3rem;
     font-weight: bold;
     margin: 0;
+    margin-right: 50px; /* Move Name to the right */
 }
 .dark-mode-btn {
     background: #0073b1;
@@ -96,7 +122,7 @@ h1 {
 
 /* Underline below Name */
 .underline {
-    width: 60%;
+    width: 50%; /* Move the line slightly off-center */
     height: 3px;
     background-color: #0073b1;
     margin-top: 10px;
@@ -144,7 +170,7 @@ h1 {
     background: #0073b1;
     color: white;
     padding: 15px 20px;
-    border-radius: 55px;
+    border-radius: 50%;
     font-size: 16px;
     cursor: pointer;
     border: none;
