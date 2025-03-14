@@ -64,8 +64,8 @@ body {
 
 /* Profile Picture */
 .profile-img {
-    width: 100px; /* Adjust the size of the profile picture */
-    height: 100px;
+    width: 80px; /* Fixed size of profile picture */
+    height: 80px; /* Fixed size of profile picture */
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -145,6 +145,34 @@ h1 {
     display: block;
 }
 
+/* Contact Section Styling */
+.contact-item {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.contact-btn, .download-cv-btn {
+    background-color: #fca311;
+    color: #ffffff;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.contact-btn:hover, .download-cv-btn:hover {
+    background-color: #d89c0d;
+}
+
 /* Dark Mode Toggle */
 #dark-mode-toggle {
     position: absolute;
@@ -159,4 +187,16 @@ h1 {
 }
 #dark-mode-toggle:hover {
     background-color: #d89c0d;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+    .main-content {
+        margin-left: 220px;
+        padding: 15px;
+    }
 }
