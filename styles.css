@@ -196,16 +196,19 @@ h1 {
     background-color: #d89c0d;
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 200px;
-        padding: 15px;
-    }
-    .main-content {
-        margin-left: 220px;
-        padding: 15px;
-    }
+/* Fix for Profile Image Path */
+.profile-img {
+    background-image: url('Profile.JPG'); /* Ensure this path is correct */
+    background-size: cover; /* Adjust image to cover the container */
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fix for Sidebar Button Size and Alignment */
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 /* Fix for overlapping buttons */
