@@ -15,19 +15,21 @@
         </div>
         <h3>Contact Me</h3>
         <div class="contact-details">
+            <!-- Address Section -->
+            <div class="contact-item">
+                <p>📍 Address: 123 Main Street, City, Country</p>
+            </div>
+            <!-- Contact Button (Popup) -->
+            <button class="contact-btn" onclick="openContactModal()">Contact</button>
+            <!-- LinkedIn Logo -->
             <div class="contact-item">
                 <a href="https://linkedin.com/in/yourprofile" target="_blank">
                     <img src="linkedin-logo.png" alt="LinkedIn Logo" class="contact-logo"> LinkedIn
                 </a>
             </div>
-            <div class="contact-item">
-                <p>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            </div>
-            <div class="contact-item">
-                <p>📞 Phone: +123 456 789</p>
-            </div>
+            <!-- Download CV Button -->
+            <a href="path/to/your-cv.pdf" download class="download-cv-btn">Download CV</a>
         </div>
-        <button class="cv-btn">CV</button>
     </aside>
 
     <!-- Main Content -->
@@ -37,7 +39,9 @@
         <header>
             <div class="header-content">
                 <h1>Your Name</h1>
-                <button id="dark-mode-toggle" class="dark-mode-btn">Dark Mode</button>
+                <div class="settings-icon">
+                    <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
+                </div>
             </div>
             <hr class="underline">
         </header>
@@ -82,11 +86,17 @@
             </div>
         </section>
 
-        <p class="last-updated">📅 Last Updated: <span id="update-date"></span></p>
-
     </div>
 
-    <button class="contact-float">📞 Contact</button>
+    <!-- Contact Modal (Popup) -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">×</span>
+            <h2>Contact Information</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: +123 456 789</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
