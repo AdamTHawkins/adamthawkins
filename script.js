@@ -1,11 +1,9 @@
-// Dark Mode Toggle
+// Dark Mode Toggle Function
 const darkModeToggle = document.getElementById("dark-mode-toggle");
-if (localStorage.getItem("darkMode") === "enabled") {
-    document.body.classList.add("dark-mode");
-}
+const body = document.body;
+
 darkModeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode") ? "enabled" : "disabled");
+    body.classList.toggle("dark-mode");
 });
 
 // Collapsible Sections
