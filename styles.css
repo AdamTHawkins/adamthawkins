@@ -10,7 +10,7 @@ body {
 
 /* Dark Mode */
 .dark-mode {
-    background-color: #000000; /* Dark background */
+    background-color: #333333; /* Dark background */
     color: #ffffff; /* White text */
 }
 .dark-mode .sidebar {
