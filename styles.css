@@ -96,6 +96,7 @@ header .header-content {
     justify-content: center; /* Center the name horizontally */
     width: 100%;
     padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -106,10 +107,11 @@ h1 {
 }
 
 .underline {
-    width: 40%; /* Adjust width to shift it left */
+    width: 80%; 
     height: 3px;
-    background-color: #0073b1; /* Blue color */
+    background-color: #0073b1; 
     margin-top: 10px;
+    margin-left: 40px;
 }
 
 /* Collapsible Sections */
