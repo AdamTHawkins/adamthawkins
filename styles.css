@@ -91,6 +91,7 @@ header {
     justify-content: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 header .header-content {
     display: flex;
     justify-content: center; /* Center the name horizontally */
@@ -107,7 +108,7 @@ h1 {
 }
 
 .underline {
-    width: 80%; 
+    width: 70%; 
     height: 3px;
     background-color: #0073b1; 
     margin-top: 10px;
