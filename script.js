@@ -17,13 +17,13 @@ document.querySelectorAll(".collapsible").forEach(button => {
 
 // Typing Effect (faster speed)
 const typingText = document.getElementById("typing-text");
-const text = "Welcome to my professional portfolio. I'm a passionate web developer!";
+const text = "Results-driven Business Analyst with a strong analytical mindset, problem-solving abilities, and a passion for optimizing business processes through technology. Adept at bridging the gap between technical teams and business stakeholders, ensuring seamless system enhancements and operational efficiency. Highly skilled in data analysis, system configuration, and process automation to drive business success.";
 let i = 0;
 function type() {
     if (i < text.length) {
         typingText.innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 30); // Faster typing speed
+        setTimeout(type, 20); // Faster typing speed
     }
 }
 type();
