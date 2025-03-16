@@ -15,7 +15,7 @@ document.querySelectorAll(".collapsible").forEach(button => {
     });
 });
 
-// Typing Effect (faster speed)
+// Typing Effect 
 const typingText = document.getElementById("typing-text");
 const text = "Versatile and results-driven analyst with a strong foundation in both technology and project management. Translating complex business requirements into scalable technical solutions, bridging the gap between stakeholders and development teams to drive efficiency and innovation. Experienced in system configuration, analysis, and process automation, with a proven track record of leading cross-functional projects from inception to implementation. Passionate about leveraging technology to optimize business operations, improve decision-making, and enhance user experience in dynamic, fast-paced environments.";
 let i = 0;
@@ -23,7 +23,7 @@ function type() {
     if (i < text.length) {
         typingText.innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 20); // Faster typing speed
+        setTimeout(type, 20); 
     }
 }
 type();
