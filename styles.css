@@ -1,30 +1,29 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5; /* Light gray background */
-    color: #000000; /* Default text color */
+    background-color: #e5e5e5; 
+    color: #000000; 
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Dark Mode */
 .dark-mode {
-    background-color: #333333; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: #333333; 
+    color: #ffffff; 
 }
 .dark-mode .sidebar {
-    background: #14213d; /* Keep the sidebar blue */
+    background: #14213d; 
 }
 .dark-mode .main-content {
-    background-color: #333333; /* Dark gray background for content */
+    background-color: #333333; 
 }
 .dark-mode .collapsible {
-    background: #fca311; /* Gold-ish button background */
+    background: #fca311; 
     color: #ffffff;
 }
 .dark-mode .content {
-    background-color: #1f1f1f; /* Dark content background */
+    background-color: #1f1f1f; 
     color: #ffffff;
 }
 .dark-mode h1, .dark-mode p {
@@ -41,8 +40,8 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 200px; /* Adjust width for sidebar */
-    background: #14213d; /* Dark Blue */
+    width: 200px; 
+    background: #14213d; 
     color: white;
     padding: 20px;
     position: fixed;
@@ -57,29 +56,29 @@ body {
 
 /* Profile Picture Container */
 .profile-pic-container {
-    width: 80px; /* Set a fixed width */
-    height: 80px; /* Set a fixed height */
+    width: 80px; 
+    height: 80px; 
     border-radius: 50%;
     margin-bottom: 20px;
-    overflow: hidden; /* Ensures the image fits into the circle */
+    overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 4px solid #ffffff; /* White circular border around the profile picture */
+    border: 4px solid #ffffff; 
 }
 
 /* Profile Image */
 .profile-img {
-    width: 100%; /* Make sure the image fits within the container */
+    width: 100%; 
     height: 100%;
-    object-fit: cover; /* Ensures the image doesn't stretch */
+    object-fit: cover;
 }
 
 /* Main Content */
 .main-content {
-    margin-left: 240px; /* Adjust content to match sidebar width */
+    margin-left: 240px; 
     padding: 20px;
-    background-color: #e5e5e5; /* Light gray background for the main content */
+    background-color: #e5e5e5; 
 }
 
 /* Header - Profile Picture & Name */
@@ -93,7 +92,7 @@ header {
 
 header .header-content {
     display: flex;
-    justify-content: center; /* Center the name horizontally */
+    justify-content: center; 
     width: 100%;
     padding: 0 20px;
     font-style: italic;
@@ -117,7 +116,7 @@ h1 {
 
 /* Collapsible Sections */
 .collapsible {
-    background: #fca311; /* Gold button */
+    background: #fca311; 
     color: #000000;
     padding: 15px;
     border: none;
@@ -132,7 +131,7 @@ h1 {
 .content {
     display: none;
     padding: 15px;
-    background-color: #ffffff; /* White background for content */
+    background-color: #ffffff; 
     font-size: 1rem;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -224,8 +223,8 @@ h1 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    justify-content: center; 
 }
 
 .modal.show {
@@ -238,10 +237,10 @@ h1 {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 600px; /* Adjust width for responsiveness */
+    width: 600px; 
     text-align: center;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .close {
