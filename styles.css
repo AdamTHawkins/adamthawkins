@@ -33,7 +33,7 @@ body {
     background-color: #333333;
     color: white;
 }
-.dark-mode #dark-mode-toggle {
+.dark-mode .dark-mode-btn {
     color: #ffffff;
     background-color: #fca311;
 }
@@ -194,7 +194,7 @@ h1 {
 }
 
 /* Dark Mode Toggle */
-#dark-mode-toggle {
+.dark-mode-btn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -206,7 +206,7 @@ h1 {
     border-radius: 5px;
 }
 
-#dark-mode-toggle:hover {
+.dark-mode-btn:hover {
     background-color: #d89c0d;
 }
 
