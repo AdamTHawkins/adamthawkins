@@ -11,7 +11,7 @@ darkModeToggle.addEventListener("click", () => {
 // Collapsible Sections
 document.querySelectorAll(".collapsible").forEach(button => {
     button.addEventListener("click", function () {
-        this.nextElementSibling.classList.toggle("Collapsible-show");
+        this.nextElementSibling.classList.toggle("collapsible-show");
     });
 });
 
