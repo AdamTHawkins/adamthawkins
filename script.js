@@ -35,3 +35,23 @@ function openContactModal() {
 function closeContactModal() {
     document.getElementById("contact-modal").classList.remove("show");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.querySelector(".sidebar-overlay");
+    const toggleButton = document.getElementById("sidebar-toggle");
+
+    // Toggle the 'open' class on sidebar and overlay visibility
+    toggleButton.addEventListener("click", () => sidebar.classList.toggle("open"));
+
+    // Close the sidebar and overlay if clicking outside
+    document.addEventListener("click", (event) => {
+        if (!sidebar.contains(event.target) && !toggleButton.contains(event.target) && !overlay.contains(event.target)) {
+            sidebar.classList.remove("open");
+        }
+    });
+
+    // Close sidebar and overlay when clicking on the overlay itself
+    overlay.addEventListener("click", () => sidebar.classList.remove("open"));
+});
+

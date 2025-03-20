@@ -9,7 +9,9 @@
 <body>
 
     <!-- Sidebar (Profile Picture & Contact Section) -->
-    <aside class="sidebar">
+    <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+
+    <aside id="sidebar" class="sidebar">
         <div class="profile-pic-container">
             <img class="profile-img" src="profile.jpg" alt="Profile Picture">
         </div>
@@ -32,6 +34,8 @@
             <button class="download-cv-btn" onclick="window.location.href='https://drive.google.com/file/d/19L4GuBbIkcUy6k2Kxpp2NoA_TaqeApbU/view?usp=drive_link'">Download CV</button>
         </div>
     </aside>
+
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
 
     <!-- Main Content -->
     <div class="main-content">
