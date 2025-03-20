@@ -67,6 +67,8 @@
     }
 
     h1 {
+        text-align: center;
+        margin-top: 30px;
         font-size: 2.5rem; 
     }
 
@@ -74,7 +76,7 @@
     width: 95%; 
     height: 3px;
     background-color: #fca311; 
-    margin-top: 10px;
+    margin-top: -10px;
 }
 
     .profile-pic-container {
@@ -120,7 +122,31 @@ body {
     ul li {
         flex: 0 0 100%; 
     }
+
+#typing-text {
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: -30px;
 }
+
+.modal-content {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; 
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+}
+
+
+
+/* End of Mobile Only Section */
+
+
+
+
 
 @media screen and (min-width: 769px) {
     .sidebar-toggle {
@@ -367,7 +393,7 @@ h3 {
     opacity: 1;
     pointer-events: auto;
 }
-
+@media screen and (min-width: 769px) {
 .modal-content {
     background-color: white;
     padding: 20px;
@@ -377,7 +403,7 @@ h3 {
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
-
+}
 .close {
     position: absolute;
     top: 10px;
