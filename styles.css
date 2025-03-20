@@ -4,18 +4,13 @@ body {
     padding: 0;
     background-color: #e5e5e5; 
     color: #000000; 
-    transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Dark Mode */
-.dark-mode {
-    background-color: #333333; 
-    color: #ffffff; 
-}
 .dark-mode .sidebar {
     background: #14213d; 
 }
-.dark-mode .main-content {
+.dark-mode .main-content, .dark-mode .close {
     background-color: #333333; 
 }
 .dark-mode .collapsible {
@@ -26,7 +21,7 @@ body {
     background-color: #1f1f1f; 
     color: #ffffff;
 }
-.dark-mode h1, .dark-mode p {
+.dark-mode h1, .dark-mode p .dark-mode h2 {
     color: #ffffff;
 }
 .dark-mode .contact-item {
@@ -42,7 +37,6 @@ body {
 .sidebar {
     width: 200px; 
     background: #14213d; 
-    color: white;
     padding: 20px;
     position: fixed;
     top: 0;
@@ -78,7 +72,6 @@ body {
 .main-content {
     margin-left: 240px; 
     padding: 20px;
-    background-color: #e5e5e5; 
 }
 
 /* Header - Profile Picture & Name */
@@ -227,7 +220,7 @@ h1 {
     justify-content: center; 
 }
 
-.modal.show {
+.show {
     display: flex;
     opacity: 1;
     pointer-events: auto;
