@@ -224,7 +224,7 @@ h3 {
     justify-content: center; 
 }
 
-.show {
+.modal.show {
     display: flex;
     opacity: 1;
     pointer-events: auto;
