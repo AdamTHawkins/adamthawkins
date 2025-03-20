@@ -9,6 +9,7 @@ body {
 /* Dark Mode */
 .dark-mode {
     background-color: #333333; 
+    color: #ffffff;
 }
 .dark-mode .sidebar {
     background: #14213d; 
@@ -23,11 +24,11 @@ body {
 }
 
 .dark-mode strong {
-    color: #ffffff;
+    color: #fca311;
 }
 
-.dark-mode h1, .dark-mode p .dark-mode h2, .dark-mode #typing-text{
-    color: #ffffff;
+.dark-mode h1, .dark-mode h2 {
+    color: #fca311;
 }
 .dark-mode .contact-item {
     background-color: #333333;
