@@ -21,6 +21,11 @@ body {
     background-color: #1f1f1f; 
     color: #ffffff;
 }
+
+.dark-mode strong {
+    color: #ffffff;
+}
+
 .dark-mode h1, .dark-mode p .dark-mode h2, .dark-mode #typing-text{
     color: #ffffff;
 }
