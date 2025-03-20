@@ -16,10 +16,7 @@ body {
 .dark-mode .main-content, .dark-mode .modal-content {
     background-color: #333333; 
 }
-.dark-mode .collapsible {
-    background: #fca311; 
-    color: #ffffff;
-}
+
 .dark-mode .content {
     background-color: #1f1f1f; 
     color: #ffffff;
