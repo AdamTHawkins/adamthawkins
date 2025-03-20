@@ -1,3 +1,46 @@
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;  /* Make sidebar take full width */
+        height: auto;
+        position: relative;
+        border-right: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove left margin */
+        padding: 10px;
+    }
+
+    .collapsible {
+        width: 100%; /* Ensure collapsible sections take full width */
+    }
+
+    .contact-item, .contact-linkedin, .contact-btn, .download-cv-btn {
+        width: 100%; /* Make buttons and sections full width */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    .profile-pic-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
