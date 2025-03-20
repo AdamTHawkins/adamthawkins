@@ -7,10 +7,13 @@ body {
 }
 
 /* Dark Mode */
+.dark-mode {
+    background-color: #333333; 
+}
 .dark-mode .sidebar {
     background: #14213d; 
 }
-.dark-mode .main-content, .dark-mode .close {
+.dark-mode .main-content, .dark-mode .modal-content {
     background-color: #333333; 
 }
 .dark-mode .collapsible {
@@ -99,6 +102,10 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    color: #ffffff;
+}
+
 .underline {
     width: 70%; 
     height: 3px;
@@ -170,7 +177,7 @@ h1 {
 }
 .contact-btn, .download-cv-btn {
     background-color: #fca311;
-    color: #ffffff;
+    color: #000000; 
     cursor: pointer;
     padding: 15px;
     margin-bottom: 20px;
