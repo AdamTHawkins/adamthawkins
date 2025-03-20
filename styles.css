@@ -24,7 +24,7 @@ body {
     background-color: #1f1f1f; 
     color: #ffffff;
 }
-.dark-mode h1, .dark-mode p .dark-mode h2 {
+.dark-mode h1, .dark-mode p .dark-mode h2, .dark-mode #typing-text{
     color: #ffffff;
 }
 .dark-mode .contact-item {
@@ -183,7 +183,7 @@ h3 {
     margin-bottom: 20px;
     border-radius: 10px;
     width: 107%;
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
     height: auto;
     box-sizing: border-box;
