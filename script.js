@@ -23,7 +23,7 @@ function type() {
     if (i < text.length) {
         typingText.innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 20); 
+        setTimeout(type, 5); 
     }
 }
 type();
